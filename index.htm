@@ -30,31 +30,125 @@
       padding: 40px;
       border-radius: 10px;
     }
-    .viewport-demo {
-      margin-top: 30px;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 1px solid #ccc;
-    }
-  </style>
+    </style>
 </head>
 <body>
-  <h1>Responsive Web Page</h1>
+  <h1>Stortorget i Malmö</h1>
+  <img src="img/trump.webp">
   <div class="container">
     <div class="box">Box 1</div>
     <div class="box">Box 2</div>
     <div class="box">Box 3</div>
   </div>
    
-  <div class="viewport-demo">
-    <h2>Viewport Meta Tag Demo</h2>
-    <p>Try different viewport settings by viewing the pages below:</p>
-   <iframe srcdoc='<meta name="viewport" content="width=1024"><h3>Fixed Width: 1024px</h3><p>This page forces a width of 1024px.</p>'></iframe>
-  <iframe srcdoc='<meta name="viewport" content="width=device-width, initial-scale=2.0"><h3>Zoomed In (200%)</h3><p>This page starts at 200% zoom.</p>'></iframe>
-  <iframe srcdoc='<meta name="viewport" content="width=device-width, initial-scale=0.5"><h3>Zoomed Out (50%)</h3><p>This page starts at 50% zoom.</p>'></iframe>
-  <iframe srcdoc='<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><h3>No Zoom Allowed</h3><p>This page prevents zooming.</p>'></iframe>
-  </div>
+  
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stortorget i Malmö</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Välkommen till Stortorget i Malmö</h1>
+    <p>En av stadens mest ikoniska platser sedan 1530-talet</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#sevardheter">Sevärdheter</a></li>
+      <li><a href="#galleri">Galleri</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <section id="historia">
+    <h2>Historia</h2>
+    <p>Stortorget i Malmö är ett historiskt torg som anlades på 1530-talet. Det var en gång ett av Nordens största torg och är idag omgivet av vackra byggnader såsom Rådhuset och Apoteket Lejonet.</p>
+  </section>
+
+  <section id="sevardheter">
+    <h2>Sevärdheter</h2>
+    <ul>
+      <li>Rådhuset från 1546</li>
+      <li>Apoteket Lejonet – ett av Sveriges äldsta apotek</li>
+      <li>Statyn av Karl X Gustav</li>
+      <li>Nära till Lilla Torg och Gustav Adolfs torg</li>
+    </ul>
+  </section>
+
+  <section id="galleri">
+    <h2>Galleri</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Stortorget_Malmo.jpg" alt="Stortorget Malmö" width="100%">
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Vill du veta mer om Stortorget? Kontakta Malmö Turism!</p>
+    <p>Email: info@malmoturism.se</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Stortorget Malmö | Designad av Dig 🖌️</p>
+  </footer>
+</body>
+</html> 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f8ff;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #ffb6c1, #add8e6);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav ul {
+  background-color: #ffa07a;
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  background-color: #ffffff;
+  margin: 1rem auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #ff6347;
+}
+
+img {
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
